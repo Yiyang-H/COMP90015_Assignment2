@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.whiteboardclient.WhiteBoardController"
+>
+    <top>
+    </top>
+    <center>
+        <fx:include fx:id="canvas" source="canvas.fxml"/>
+    </center>
+    <right>
+        <VBox minWidth="350" maxWidth="350">
+            <Label text="Users"></Label>
+            <ListView fx:id="usersList">
+            </ListView>
+            <Label text="Chat"></Label>
+            <ListView fx:id="chat">
+            </ListView>
+            <TextArea fx:id="input">
+
+            </TextArea>
+        </VBox>
+    </right>
+</BorderPane>

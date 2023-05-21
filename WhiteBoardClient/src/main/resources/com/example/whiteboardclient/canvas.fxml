@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.example.whiteboardclient.CanvasController"
+           fx:id="pane">
+    <Canvas fx:id="canvas"/>
+    <Canvas fx:id="tempCanvas"/>
+    <Pane fx:id="textPane">
+    </Pane>
+
+    <HBox fx:id="tools">
+
+        <ToggleButton fx:id="penButton" userData="0" onAction="#switchTool" >
+            <graphic>
+                <FontIcon iconLiteral="bi-pencil"/>
+            </graphic>
+        </ToggleButton>
+        <ToggleButton fx:id="lineButton" userData="1" onAction="#switchTool">
+            <graphic>
+                <FontIcon iconLiteral="bi-slash"/>
+            </graphic>
+        </ToggleButton>
+        <ToggleButton fx:id="circleButton" userData="2" onAction="#switchTool">
+            <graphic>
+                <FontIcon iconLiteral="bi-circle"/>
+            </graphic>
+        </ToggleButton>
+        <ToggleButton fx:id="triangleButton" userData="3" onAction="#switchTool">
+            <graphic>
+                <FontIcon iconLiteral="bi-triangle"/>
+            </graphic>
+        </ToggleButton>
+        <ToggleButton fx:id="rectangleButton" userData="4" onAction="#switchTool">
+            <graphic>
+                <FontIcon iconLiteral="bi-square"/>
+            </graphic>
+        </ToggleButton>
+        <ToggleButton fx:id="textInputButton" userData="5" onAction="#switchTool">
+            <graphic>
+                <FontIcon iconLiteral="bi-input-cursor-text"/>
+            </graphic>
+        </ToggleButton>
+
+
+        <ColorPicker fx:id="colorPicker"/>
+
+    </HBox>
+
+
+</StackPane>

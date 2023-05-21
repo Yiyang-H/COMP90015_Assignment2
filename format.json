@@ -1,0 +1,88 @@
+// Used for main socket
+
+
+// A request to retreive all rooms/sessions in the server
+{
+	"operation": "Rooms",
+}
+// The response from the server
+{
+	"operation": "Rooms",
+	"status": "success",
+	"rooms": [{
+		"roomId" : 0,
+		"host": "name"
+	}] // List of rooms
+}
+
+
+{
+	"operation": "CreateRoom",
+	"clientName": "name",
+}
+{
+	"operation": "CreateRoom",
+	"clientName": "name",
+	"status": "success",
+}
+
+
+{
+	"operation": "JoinRoom",
+	"clientName": "name",
+	"RoomId" : 0
+}
+{
+	"operation": "JoinRoom",
+	"clientName": "name",
+	"RoomId" : 0,
+	"status": "success/rejected" 
+}
+
+
+// Use for the session
+
+
+// A message to draw an object
+{
+	"operation": "Draw",
+	"drawing": "drawable object"
+}
+
+// A message to send a chat
+{
+	"operation": "Chat",
+	"clientName": "name",
+	"text": "text",
+}
+
+// A message to update the user list on the client side
+{
+	"operation": "UpdateUsers",
+	"users": ["user1", "user2"]
+}
+
+
+{
+	"operation": "Kick",
+	"name": "clientName+suffix"
+}
+
+{
+	"operation": "New",
+}
+
+{
+	"operation": "Open",
+	"drawings": "drawings"
+}
+
+{
+	"operation": "UpdateUsers",
+	"users": ["user1", "user2"]
+}
+
+
+
+
+

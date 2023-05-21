@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<VBox alignment="CENTER" spacing="60.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.whiteboardclient.HomepageController">
+    <padding>
+        <Insets top="50" right="50" bottom="50" left="50"/>
+    </padding>
+
+    <HBox alignment="CENTER_RIGHT">
+        <Button fx:id="refresh" text="Refresh"/>
+    </HBox>
+
+    <TableView fx:id="table">
+    </TableView>
+
+    <HBox>
+        <Button fx:id="create" text="Create Room"></Button>
+        <Button fx:id="join" text="Join Room"/>
+
+    </HBox>
+
+
+
+<!--    <VBox alignment="CENTER">-->
+<!--        <VBox>-->
+<!--            <VBox>-->
+<!--                <Label text="Select server address"/>-->
+<!--                <ChoiceBox value="localhost" fx:id="hostAddress">-->
+<!--                    <String fx:value="localhost"></String>-->
+<!--                </ChoiceBox>-->
+<!--            </VBox>-->
+<!--            <VBox>-->
+<!--                <Label text="Enter the port"/>-->
+<!--                <TextField fx:id="hostPort"/>-->
+<!--            </VBox>-->
+
+<!--        </VBox>-->
+
+<!--        <Button text="Host a white board" onAction="#onHost"/>-->
+<!--    </VBox>-->
+
+<!--    <VBox alignment="CENTER" >-->
+<!--        <Label text="Enter server address"/>-->
+<!--        <TextField fx:id="joinAddress"/>-->
+<!--        <Label text="Enter server port"/>-->
+<!--        <TextField fx:id="joinPort"/>-->
+<!--        <Button text="Join a white board" onAction="#onJoin"/>-->
+<!--    </VBox>-->
+
+</VBox>
